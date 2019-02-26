@@ -17,7 +17,6 @@ npm start
 
 Application will be available on `localhost:3333`
 
-<img src="img/screenshot.png" width="500">
 
 ## ToDo
 1. Clone the project
@@ -28,3 +27,16 @@ Application will be available on `localhost:3333`
     * Users can navigate back from a job details page to the job list
     * Users see error message when they visit an unknown URL e.g. `http://localhost:3333/foo`
 4. Send a link with the solution to your contact person inside HeyJobs. **Note!** Don't fork the repository or create pull requests. Please set up a new repository for the test task.
+
+#### Running e2e tests
+1. Install the dependencies in the local node_modules folder.
+
+```
+npm install
+```
+
+2. Run tests
+
+```
+./node_modules/.bin/wdio wdio.conf.js
+```
