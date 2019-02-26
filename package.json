@@ -1,0 +1,70 @@
+{
+  "name": "rr-ssr-gists",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack -w",
+    "build:prod": "NODE_ENV='production' webpack",
+    "serve": "node server.js",
+    "serve:dev": "nodemon server.js",
+    "start": "npm install && npm run build:prod && npm run serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "description": "Thanks for taking the time to complete this test task! The purpose of the task is to assess your automation skills, i.e. development style, code organization, project structure.",
+  "babel": {
+    "presets": [
+      "env",
+      "react"
+    ],
+    "plugins": [
+      "transform-object-rest-spread"
+    ]
+  },
+  "devDependencies": {
+    "@wdio/allure-reporter": "^5.6.0",
+    "@wdio/cli": "^5.6.2",
+    "@wdio/local-runner": "^5.6.2",
+    "@wdio/mocha-framework": "^5.6.0",
+    "@wdio/sync": "^5.6.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "nodemon": "^1.18.10",
+    "wdio-sync": "^0.7.3",
+    "webdriverio": "^5.6.2",
+    "webpack": "^3.10.0",
+    "webpack-node-externals": "^1.6.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "immutable": "^3.8.2",
+    "isomorphic-fetch": "^2.2.1",
+    "lodash": "^4.17.11",
+    "material-ui": "^0.20.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-helmet": "^5.2.0",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2",
+    "redux-promise-middleware": "^5.0.0",
+    "redux-thunk": "^2.2.0",
+    "reselect": "^3.0.1",
+    "serialize-javascript": "^1.4.0",
+    "styled-components": "^3.1.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heyjobs/automation-test-task.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/heyjobs/automation-test-task/issues"
+  },
+  "homepage": "https://github.com/heyjobs/automation-test-task#readme"
+}
